@@ -1,0 +1,110 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+#mercedez1{
+  background-image:url('../img/mercedez1.jpg');
+  background-repeat: no-repeat;
+background-size: 1150px 450px;
+background-position: 50px 500px ;
+
+}
+body {
+ background-color: palegreen  ;
+  margin-left: 50px;
+
+}
+
+h2 {
+  background-color: lime;
+  font-family: "Helvetica";
+}
+
+h1#groot:hover {
+  background-color: lime;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 100px 50px 5fr 1fr;
+    grid-template-areas: "hoofd hoofd hoofd"
+                         "hoofd1 hoofd1 hoofd1"
+                         "midden midden fotos"
+                         "voet voet voet";
+  }
+
+  .box {
+    min-height: 700px;
+  }
+
+  #bovenbalk {
+    grid-area: hoofd;
+    background-color: limegreen;
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  #bovenbalk2 {
+    grid-area: hoofd1;
+    background-color:limegreen ;
+
+  }
+
+
+
+  #rechterkolom {
+    grid-area: fotos;
+    background-color:limegreen  ;
+  }
+
+
+  #klein{
+  float:right;
+  margin-right: 50px;
+  margin-top: -125px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+  #centrum {
+    grid-area: midden;
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+
+
+  h1#groot {
+    border: 4px maroon double ;
+    background-color: darkgreen ;
+    text-align : center;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-style: italic;
+    margin: 5px;
+
+  }
+
+  h1#bsa {
+  border: 4px maroon double;
+  border-radius: 20px 0px 20px 0px;
+  text-align: center;
+  padding: 5px 1px 0px 10%;
+  border-style: dotted
+}
+
+#footer {
+  grid-area: voet;
+  background-color: limegreen;
+}
+
+a {
+  text-decoration: none;
+}
+
+.broek{
+width: 49%;
+}
